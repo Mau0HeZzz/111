@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url(f:\Всячина\Study\html\Gamers\contacts\css\style.css);
+.block {
+  padding-top: 9px;
+}
+
+.menu-link {
+  color: black;
+}
+
+.menu-link:hover {
+  border-color: black;
+  color: black;
+}
+
+.navigation {
+  border-bottom: none;
+}
+
+.footer {
+  clear: both;
+  margin: 4.5% 0px 0px 0px;
+  background-color: #e1e1e1;
+  border-top: 1px solid #000;
+}
+
+.contacts-text {
+  color: black;
+}
