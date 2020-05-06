@@ -18,7 +18,7 @@
 
 .footer {
     clear: both;
-    margin: 4.2% 0px 0px 0px;
+    margin: 81px 0px 0px 0px;
     background-color: #e1e1e1;
     border-top: 1px solid #000;
 }
@@ -45,7 +45,7 @@
 }
 
 .tgallery {
-    margin-top: 4.2%;
+    margin-top: 81px;
     border-top: 1px solid #000;
 }
 
@@ -77,10 +77,173 @@
         margin-left: 4px;
     }
     &:active {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }
 
 .game-buy:active {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-} 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery_sell {
+    padding-bottom: 174px;
+    background-color: #f7f7f7;
+}
+
+.gallery_sell:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.gallery_sell__cod {
+    float: left;
+    width: 50%;
+    background-image: url(../img/bgmw3.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.gallery_sell__content {
+    width: 50%;
+    padding: 146px 55px 146px 116px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(249, 249, 249, 1) 0%,
+        rgba(242, 242, 244, 1) 30%,
+        rgba(2, 0, 36, 0) 100%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.gallery_sell-moh {
+    padding-top: 186px;
+}
+
+.gallery_sell--discount {
+    color: #010101;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.gallery_sell--heading {
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.heading_mw3 {
+    text-transform: capitalize;
+}
+.gallery_sell--price_big {
+    display: inline-block;
+    color: #000;
+    font-family: Poppins;
+    font-size: 62px/1920px*100vw;
+    font-weight: 300;
+    line-height: 48px;
+    margin-top: 27px/1920px * 100vw;
+}
+.gallery_sell--price_small {
+    display: inline-block;
+    color: #8c8c8c;
+    font-family: Poppins;
+    font-size: 36px/1920px*100vw;
+    font-weight: 300;
+    line-height: 48px;
+    text-decoration: line-through;
+}
+.gallery_sell--button {
+    display: inline-block;
+    background-color: #f44336;
+    margin-top: 20px;
+    padding: 16px 105px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+.gallery_sell__moh {
+    float: right;
+    width: 50%;
+    background-image: url(../img/bgmoh.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1023.99px) {
+    .gallery_sell__cod  {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        overflow: scroll;
+    }
+    .gallery_sell__moh {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        overflow: scroll;
+        display: block;
+    }
+
+    .gallery_sell__content {
+        padding-bottom: 15%;
+    }
+}
+
+@media(max-width:802px) {
+    .menu-link {
+        color: #fff;
+    }
+}
+
+@media (max-width:591px) {
+    .wrap-1,
+    .wrap-2 {
+        display: block;
+    }
+
+    .gallery-margin {
+        margin-top: 5px;
+    }
+
+    .rogue,
+    .leech-king,
+    .leach-king,
+    .ryse,
+    .lich-king,
+    .tomb-raider {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:390px) {
+    .gallery_sell__moh {
+        background-position: 75% 0%;
+    }
+    .gallery_sell--discount {
+        font-size: 14px;
+    }
+    .gallery_sell--heading {
+        font-size: 20px;
+    }
+    .gallery_sell--price_big {
+        font-size: 18px;
+    }
+    .gallery_sell--price_small{
+        font-size: 10.5px;
+        color: #c7b7b7;
+    }
+    .gallery_sell--button {
+        padding: 5px 35px;
+        font-size: 10px;
+    }
+}
