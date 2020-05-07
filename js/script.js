@@ -1,7 +1,8 @@
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
-        $('.menu').toggleClass('active');
+        $('.menu, .header-burger').toggleClass('active');
         $('body').toggleClass('lock');
+        $('.presentation__slider').toggleClass('lock');
     });
 });
 $(document).ready(function () {
@@ -25,4 +26,32 @@ $(document).ready(function () {
     $('.header-4').click(function (event) {
         $('.header-4, .content-4').toggleClass('activee');
     });
+});
+$(function() {
+    $(".label-1").click(function() {
+        $(".label-2, .slide2, .label-3, .slide3, .label-4, .slide4").removeClass("show");
+        $(this).addClass("show");
+        $(".slide1").addClass("show");
+    })
+});
+$(function() {
+    $(".label-2").click(function() {
+        $(".label-1, .slide1, .label-3, .slide3, .label-4, .slide4").removeClass("show");         
+        $(this).addClass("show");
+        $(".slide2").addClass("show");
+    })
+});
+$(function() {
+    $(".label-3").click(function() {
+        $(".label-1, .slide1, .label-2, .slide2, .label-4, .slide4").removeClass("show");         
+        $(this).addClass("show");
+        $(".slide3").addClass("show");
+    })
+});
+$(function() {
+    $(".label-4").click(function() {
+        $(".label-1, .slide1, .label-3, .slide3, .label-2, .slide2").removeClass("show");         
+        $(this).addClass("show");
+        $(".slide4").addClass("show");
+    })
 });

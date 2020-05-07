@@ -181,7 +181,7 @@ body {
 .menu-link:hover {
     color: #9c9c9c;
     border-bottom: 3px solid #9c9c9c;
-    padding-bottom: 22px;
+    padding-bottom: 28px;
 }
 
 .top-zelda-content {
@@ -408,6 +408,11 @@ body {
 
 .rogue {
     margin-right: 30px;
+}
+
+.gallery-under-cover a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .lich-king {
@@ -1130,6 +1135,10 @@ a.latest {
     .menu-link {
         color: #fff;
         font-size: 30px;
+    }
+    .menu-link:hover {
+        border: none;
+        padding: 0px 0px 0px 0px;
     }
 
     .subscribe-us-content > .testimonial-word {
